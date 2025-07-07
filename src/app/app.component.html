@@ -1,0 +1,57 @@
+<!-- Navbar stays at the top -->
+<nav class="custom-navbar navbar navbar-expand-lg shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-light" href="#">Narasimha</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-4">
+        <li class="nav-item">
+          <!-- <a class="nav-link" [ngClass]="{ active: activeSection === 'home' }" href="#home">Home</a> -->
+          <a class="nav-link" [routerLink]="['/']" fragment="home" [ngClass]="{ active: activeSection === 'home' }">Home</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" [ngClass]="{ active: activeSection === 'about' }" href="#about">About</a> -->
+          <a class="nav-link" [routerLink]="['/']" fragment="about" [ngClass]="{ active: activeSection === 'about' }">About</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" [ngClass]="{ active: activeSection === 'skills' }" href="#skills">Skills</a> -->
+        <a class="nav-link" [routerLink]="['/']" fragment="skills" [ngClass]="{ active: activeSection === 'skills' }">Skills</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" [ngClass]="{ active: activeSection === 'projects' }" href="#projects">Projects</a> -->
+          <a class="nav-link" [routerLink]="['/']" fragment="projects" [ngClass]="{ active: activeSection === 'projects' }">Projects</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link" [ngClass]="{ active: activeSection === 'contact' }" href="#contact">Contact</a> -->
+          <a class="nav-link" [routerLink]="['/']" fragment="contact" [ngClass]="{ active: activeSection === 'contact' }">Contact</a>
+        </li>
+      </ul>
+            <!-- Social icons -->
+      <div class="d-flex align-items-center">
+        <a href="https://github.com/narasimha-peddanagalla" target="_blank" class="text-light me-3 fs-5">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/peddanagalla-narasimha" target="_blank" class="text-light fs-5">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Sections below navbar -->
+<section id="home"><app-home></app-home></section>
+<section id="about"><app-about></app-about></section>
+<section id="skills"><app-skills></app-skills></section>
+<section id="projects"><app-projects></app-projects></section>
+<section id="contact"><app-contact></app-contact></section>
+
+<!-- Scroll to Top Button -->
+<app-scroll-to-top></app-scroll-to-top>
+
+<!-- Footer stays at the bottom -->
+<app-footer></app-footer>

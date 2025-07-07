@@ -1,0 +1,89 @@
+.hero-section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1f2c4b, #000000);
+  text-align: center;
+}
+
+.section {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.section p, .section li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.custom-navbar {
+  background-color: #0f172a;
+  padding: 0.8rem 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #facc15 !important; /* Yellow on hover */
+}
+body, h1, h2, h3, h4, h5, h6, p, a, span, div {
+  user-select: none;
+  outline: none;
+}
+
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f172a;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+section {
+  scroll-margin-top: 100px;
+  padding-top: 60px;
+}
+
+/* Navbar base styles */
+.navbar-nav .nav-link {
+  color: #e2e8f0 !important; /* Light text */
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Highlight active section */
+.navbar-nav .nav-link.active {
+  color: #facc15 !important; /* Yellow for active section */
+  font-weight: 700;
+  border-bottom: 2px solid #facc15;
+}
+.navbar-nav .nav-link:hover {
+  color: #facc15 !important;
+}
+
+section {
+  scroll-margin-top: 100px;
+  padding-top: 0;
+  margin: 0;
+  border-bottom: 5px solid #1e293b; 
+}

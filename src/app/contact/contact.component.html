@@ -1,0 +1,75 @@
+<div id="contact-section" class="section">
+<div class="section">
+  <h2 class="text-center mb-5">Contact Me</h2>
+
+  <div class="row">
+    <!-- Left: Contact Info -->
+    <div class="col-md-5 mb-5">
+      <h4 class="text-warning">Reach Me At</h4>
+      <p>
+        <i class="fas fa-envelope text-warning me-2"></i>
+        <a href="mailto:narasimhapeddanagalla&#64;gmail.com" class="text-light text-decoration-none">
+          narasimhapeddanagalla&#64;gmail.com
+        </a>
+      </p>
+      <p>
+        <i class="fas fa-phone text-warning me-2"></i>
+        +91 6302387125
+      </p>
+      <p>
+        <i class="fab fa-github text-warning me-2"></i>
+        <a href="https://github.com/narasimha-peddanagalla" target="_blank" class="text-light text-decoration-none">
+          github.com/narasimha-peddanagalla
+        </a>
+      </p>
+      <p>
+        <i class="fab fa-linkedin text-warning me-2"></i>
+        <a href="https://linkedin.com/in/peddanagalla-narasimha" target="_blank" class="text-light text-decoration-none">
+          linkedin.com/in/peddanagalla-narasimha
+        </a>
+      </p>
+      <p>
+        <i class="fas fa-map-marker-alt text-warning me-2"></i>
+        Bangalore, Karnataka
+      </p>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="col-md-7">
+      <h4 class="text-warning mb-4">Send Me a Message</h4>
+      <!-- <form>
+        <div class="mb-3">
+          <label for="fromEmail" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="fromEmail" placeholder="your-email@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-warning px-4 fw-bold">Send</button>
+      </form> -->
+      <form (submit)="sendEmail(); $event.preventDefault();">
+  <div class="mb-3">
+    <label for="fromEmail" class="form-label">Your Email</label>
+    <input [(ngModel)]="fromEmail" name="fromEmail" type="email" class="form-control" id="fromEmail" placeholder="your-email@example.com" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea [(ngModel)]="message" name="message" class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-warning px-4 fw-bold">Send</button>
+
+  <div class="mt-3">
+    <p class="text-success" *ngIf="successMessage">{{ successMessage }}</p>
+    <p class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </div>
+</form>
+
+    </div>
+  </div>
+</div>
+</div>

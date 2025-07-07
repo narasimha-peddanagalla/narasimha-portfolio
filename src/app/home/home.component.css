@@ -1,0 +1,8 @@
+.typing-container span {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#contact {
+  scroll-margin-top: 80px;
+}
